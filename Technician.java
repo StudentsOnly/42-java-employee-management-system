@@ -10,15 +10,9 @@ public class Technician extends Employee {
         this.hourlyRate = hourlyRate;
     }
 
-    public double calculateSalary(int hoursWorked) {
-        return hoursWorked * hourlyRate * 4 * 12;
-    }
-
-    @Override
     public double calculateSalary() {
-        System.out.println("calculateSalary() not implemented, " +
-                "use calculateSalary(int hoursWorked) instead.");
-        return -1.0;
+        int hoursWorked = 40;
+        return hoursWorked * hourlyRate * 4 * 12;
     }
 
     @Override

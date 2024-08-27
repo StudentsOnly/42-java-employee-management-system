@@ -19,6 +19,6 @@ public class Main{
         technician.setHourlyRate(25.0);
 
         technician.displayEmployeeInfo();
-        System.out.println("Technician Salary: $" + technician.calculateSalary(40));
+        System.out.println("Technician Salary: $" + technician.calculateSalary());
     }
 }
