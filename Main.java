@@ -17,6 +17,7 @@ public class Main{
         technician.setEmployeeId(12345);
         technician.setName("John Doe");
         technician.setHourlyRate(25.0);
+        technician.setHoursWorked(40);
 
         technician.displayEmployeeInfo();
         System.out.println("Technician Salary: $" + technician.calculateSalary());

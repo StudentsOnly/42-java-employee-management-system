@@ -1,6 +1,7 @@
 public class Technician extends Employee {
 
     private double hourlyRate;
+    private int hoursWorked;
 
     public double getHourlyRate() {
         return hourlyRate;
@@ -10,8 +11,15 @@ public class Technician extends Employee {
         this.hourlyRate = hourlyRate;
     }
 
+    public int getHoursWorked() {
+        return hoursWorked;
+    }
+
+    public void setHoursWorked(int hoursWorked) {
+        this.hoursWorked = hoursWorked;
+    }
+
     public double calculateSalary() {
-        int hoursWorked = 40;
         return hoursWorked * hourlyRate * 4 * 12;
     }
 
@@ -19,7 +27,8 @@ public class Technician extends Employee {
     public void displayEmployeeInfo() {
 
         System.out.println(getClass().getSimpleName() + "\nID: " + getEmployeeId()
-                + "\nName: " + getName() + "\nHourly Rate: $" + hourlyRate);
+                + "\nName: " + getName() + "\nHourly Rate: $" + hourlyRate
+                + "\nHours Worked: " + hoursWorked);
         System.out.println();
 
     }
